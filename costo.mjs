@@ -7,7 +7,8 @@ async function getDataFromWebPage() {
     });
 
     const page = await browser.newPage();
-    await page.goto('https://ciudaddecorrientes.gov.ar/tramites/tramites-no-municipales/tramitar-dni');
+
+    await page.goto('https://ciudaddecorrientes.gov.ar/tramites/tramites-no-municipales/consulta-de-cuil');
 
     const container = await page.$('ul.sticky');
     if (container) {
@@ -26,14 +27,10 @@ async function getDataFromWebPage() {
             }
         }
     } else {
-        console.log('No se encontró ningún elemento ul.sticky en la página.');
+        console.log('No se encontró ningún costo.');
     }
 
     await browser.close();
 }
 
 getDataFromWebPage();
-
-
-// https://ciudaddecorrientes.gov.ar/tramites/infracciones/certificado-libre-de-deuda-infracciones-y-antecedentes
-

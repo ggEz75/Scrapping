@@ -8,13 +8,19 @@ async function handleDynamicWebPage() {
     });
 
     const pages = [
+        { label: 'Salud', url: 'https://ciudaddecorrientes.gov.ar/tramites/salud' },
+        { label: 'Tramites No Municipales', url: 'https://ciudaddecorrientes.gov.ar/tramites/tramites-no-municipales' },
+        { label: 'ESCRIBANíA MUNICIPAL', url: 'https://ciudaddecorrientes.gov.ar/tramites/escriban-municipal' },
+        { label: 'SUBE', url: 'https://ciudaddecorrientes.gov.ar/tramites/sube' },
+        { label: 'LIMPIEZA URBANA', url: 'https://ciudaddecorrientes.gov.ar/tramites/limpieza-urbana' },
+        { label: 'CEMENTERIOS', url: 'https://ciudaddecorrientes.gov.ar/tramites/cementerios' },
+        { label: 'POLITICAS SOCIALES', url: 'https://ciudaddecorrientes.gov.ar/tramites/politicas-sociales' },
         { label: 'RESIDUOS PELIGROSOS Y TóXICOS', url: 'https://ciudaddecorrientes.gov.ar/tramites/residuos-peligrosos-y-t-xicos' },
         { label: 'ESPACIOS PUBLICOS', url: 'https://ciudaddecorrientes.gov.ar/tramites/espacios-publicos' },
         { label: 'OBRAS PUBLICAS', url: 'https://ciudaddecorrientes.gov.ar/tramites/obras-publicas' },
         { label: 'RECLAMO / DENUNCIA', url: 'https://ciudaddecorrientes.gov.ar/tramites/reclamo-denuncia' },
         { label: 'ESPACIOS CULTURALES', url: 'https://ciudaddecorrientes.gov.ar/tramites/espacios-culturales' },
         { label: 'ATENCION CIUDADANA', url: 'https://ciudaddecorrientes.gov.ar/tramites/atencion-ciudadana' },
-        { label: 'TRAMITES NO MUNICIPALES', url: 'https://ciudaddecorrientes.gov.ar/tramites/tramites-no-municipales' },
         { label: 'PUNTO DIGITAL', url: 'https://ciudaddecorrientes.gov.ar/tramites/punto-digital' },
         { label: 'INMUEBLES', url: 'https://ciudaddecorrientes.gov.ar/tramites/inmuebles' },
         { label: 'USO DE SUELO', url: 'https://ciudaddecorrientes.gov.ar/tramites/uso-de-suelo' },
@@ -28,14 +34,8 @@ async function handleDynamicWebPage() {
         { label: 'PYMES Y EMPRENDEDORES', url: 'https://ciudaddecorrientes.gov.ar/tramites/pymes-y-emprendedores' },
         { label: 'AUTOMOTOR', url: 'https://ciudaddecorrientes.gov.ar/tramites/automotor' },
         { label: 'DESARROLLO ECONOMICO', url: 'https://ciudaddecorrientes.gov.ar/tramites/desarrollo-economico' },
-        { label: 'ESCRIBANíA MUNICIPAL', url: 'https://ciudaddecorrientes.gov.ar/tramites/escriban-municipal' },
-        { label: 'SUBE', url: 'https://ciudaddecorrientes.gov.ar/tramites/sube' },
-        { label: 'LIMPIEZA URBANA', url: 'https://ciudaddecorrientes.gov.ar/tramites/limpieza-urbana' },
-        { label: 'SALUD', url: 'https://ciudaddecorrientes.gov.ar/tramites/salud' },
-        { label: 'CEMENTERIOS', url: 'https://ciudaddecorrientes.gov.ar/tramites/cementerios' },
-        { label: 'POLITICAS SOCIALES', url: 'https://ciudaddecorrientes.gov.ar/tramites/politicas-sociales' },
-        { label: 'HABILITACIONES Y PERMISOS', url: 'https://ciudaddecorrientes.gov.ar/tramites/habilitaciones-y-permisos' },
         { label: 'LICENCIA DE CONDUCIR', url: 'https://ciudaddecorrientes.gov.ar/tramites/licencia-de-conducir' },
+        { label: 'HABILITACIONES Y PERMISOS', url: 'https://ciudaddecorrientes.gov.ar/tramites/habilitaciones-y-permisos' },
         { label: 'TASAS COMERCIALES', url: 'https://ciudaddecorrientes.gov.ar/tramites/tasas-comerciales' },
         { label: 'BROMATOLOGIA', url: 'https://ciudaddecorrientes.gov.ar/tramites/bromatologia' },
         { label: 'TRANSPORTE', url: 'https://ciudaddecorrientes.gov.ar/tramites/transporte' },
@@ -49,7 +49,6 @@ async function handleDynamicWebPage() {
         { label: 'RENTAS', url: 'https://ciudaddecorrientes.gov.ar/tramites/rentas' },
         { label: 'TRANSITO', url: 'https://ciudaddecorrientes.gov.ar/tramites/transito' }
     ];
-    
 
     try {
         let allResults = [];
@@ -106,3 +105,7 @@ async function handleDynamicWebPage() {
 }
 
 handleDynamicWebPage();
+
+
+
+
